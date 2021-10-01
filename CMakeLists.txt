@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
 project(tobii_stream_engine)
 
-message("Foo ${CMAKE_CURRENT_SOURCE_DIR}")
-message("ABI ${CMAKE_ANDROID_ARCH_ABI}")
 # Tobii Native SDK
 add_library( tobii_stream_engine SHARED IMPORTED GLOBAL )
 set_target_properties( tobii_stream_engine PROPERTIES 

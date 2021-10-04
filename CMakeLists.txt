@@ -9,6 +9,7 @@ if(ANDROID)
     )     
 elseif(WIN32) 
     set_target_properties( tobii_stream_engine PROPERTIES 
+        IMPORTED_IMPLIB ${CMAKE_CURRENT_SOURCE_DIR}/stream_engine/lib/x86_64/libtobii_stream_engine.lib 
         IMPORTED_LOCATION ${CMAKE_CURRENT_SOURCE_DIR}/stream_engine/lib/x86_64/libtobii_stream_engine.dll 
     )      
 else()

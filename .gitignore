@@ -1,0 +1,5 @@
+﻿# MSVC
+/.vs
+
+#CMake
+/out
